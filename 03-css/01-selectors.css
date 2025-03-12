@@ -14,8 +14,35 @@ li[class] {
   color: var(--red);
 }
 
+li[class$="g"] {
+  color: var(--magenta);
+}
+
+li[id="cat"] {
+  color: var(--teal);
+}
+
+li[class$="t"] {
+  color: var(--green);
+}
+
+li[class$="y"] {
+  color: var(--royalblue);
+}
+
+li[class*=" "] {
+  color: var(--royalblue);
+}
 /* Use descendant, child, and sibling selectors for the second part */
 
 section li {
   color: var(--green);
+}
+
+.first ~ li {
+  color: var(--violet);
+}
+
+.second + li {
+  color: var(--royalblue);
 }

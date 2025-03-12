@@ -1,6 +1,62 @@
+.main {
+  margin-top: 120px;
+}
+
 @media (min-width: 1024px) {
   body {
     background: var(--green);
     color: var(--white);
   }
+}
+
+@media (min-width: 332px) and (max-width: 1020px) {
+  body {
+    background: var(--orange);
+    color: var(--black);
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  .main {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 331px) {
+  body {
+    background: var(--purple);
+    color: var(--white);
+  }
+  nav ul li {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .main {
+    margin-top: 240px;
+  }
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+}
+
+nav ul {
+  padding: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  width: 100px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
 }
